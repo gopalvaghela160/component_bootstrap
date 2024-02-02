@@ -1,0 +1,436 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0 ;
+}
+ul li 
+{
+  list-style-type: none;
+}
+/* menubar section start */
+.logo-img {
+  width: 200px;
+  height: 75px;
+}
+
+.nav-button button {
+  width: 235px;
+  background-color: black;
+  height: 70px;
+  border: none;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.nav-button button i {
+  font-size: 35px;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.nav-link {
+  color: black !important;
+}
+@media (max-width:1199px) {
+  .nav-text {
+    font-size: 16px !important;
+  }
+}
+/* menubar section end */
+/* slider section start */
+.sliderItems img
+{
+  height: 600px;
+  object-fit: cover;
+}
+.sliderItems
+{
+  position: relative;
+}
+.sliderContant strong{
+  font-weight: bolder;
+}
+.sliderContant button
+{
+  padding: 0 50px;
+  line-height: 70px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 20px;
+
+}
+.sliderContant p
+{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.sliderContant h1
+{
+  font-size: 80px;
+}
+.sliderContant
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: #000000; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width:768px){
+  .sliderContant h1,strong{
+    font-size: 50px;
+  }
+}
+@media (max-width:320px)
+{
+  .sliderContant h1{
+    font-size: 38px;
+  }
+}
+
+/* slider section end */
+/* card section start */
+.card-icon i
+{
+  font-size: 70px;
+  line-height: 90px;
+  
+}
+.card-icon
+{
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);;
+}
+.card-text 
+{
+  font-size:15px;
+
+  color: #666666;
+}
+
+/* card section end */
+/* who are you section start */
+.trend-main
+{
+  max-width: 119rem;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.trend-box img
+{
+  width: 100%;
+  /* height: 540px; */
+  object-fit: cover;
+  /* margin-left: 90px; */
+}
+.trend-text button
+{
+  height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    background: #000000;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid;
+    padding: 0 50px;
+    position: relative;
+    font-size: 16px;
+    border-radius: 100px;
+}
+.trend-text
+{
+    /* width: 400px !important; */
+    margin: auto;
+    text-align: left;
+}
+@media (max-width:426px) {
+  .trend-text h2, strong{
+    font-size: 1.5rem;
+  }
+  .trend-text p{
+    font-size: 1rem;
+    width: 300px;
+  }
+  
+}
+
+/* who are you section end */
+.tab-text p
+{
+  margin-bottom: 5px !important;
+}
+.tex-space
+{
+  margin-top: 2rem;
+}
+
+.what-img
+{
+  background-image: url('./image/asset\ 41.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+.what-main h2
+{
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 20px;
+}
+.what-text{
+  text-align: center;
+  color: #fff;
+}
+.what-text h3 
+{
+  font-size: 1.3rem;
+  font-weight: 700;
+  /* text-align: center; */
+}
+
+.what-icon i
+{
+  font-size: 70px;
+  line-height: 90px;
+  color: white;
+}
+.what-icon
+{
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.card {
+  background-color: transparent !important;
+  padding: 20px 10px;
+  
+  margin: auto;
+}
+
+/* project section start */
+.what-main h2
+{
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 20px;
+}
+.what-text{
+  text-align: center;
+  color: #fff;
+}
+.what-text h3 
+{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+
+.ProjectDtl {
+  border: 5px solid #1d1d1d;
+  border-bottom-color: grey;
+}
+
+ .DtlTxt {
+  z-index: 11;
+} 
+  
+.ProjectDtl::after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(29, 29, 29, .5);
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.ProjectDtl:hover.ProjectDtl::after {
+  background-color: rgb(29, 29, 29, .1);
+}
+.ProjectDtl:hover{
+  border-bottom-color: rgb(164, 164, 164);
+}
+
+.DtlBtn {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.ProjectDtl:hover .DtlBtn {
+  opacity: 1;
+}
+/* project section end */
+/* company section start */
+.company
+{
+  background-image: url(./image/company.png);
+  width: 100%;
+  height: auto;
+  padding: 60px 0px;
+
+  /* overflow: hid; */
+}
+.c-box img
+{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  
+}
+.c-box
+{
+  width: 157px;
+  /* height: 120px; */
+  border: 2px solid white;
+  overflow: hidden;
+  object-fit: cover;
+  margin: auto;
+}
+
+
+.com-tital h2{
+  font-size: 34px;
+}
+.com-tital
+{
+  margin-bottom: 80px;
+}
+/* company section end */
+/* counter section start */
+.counter-icon i
+{
+  font-size: 70px;
+  line-height: 90px;
+  color: white;
+}
+.counter-icon
+{
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 5%;
+  border: 10px solid black;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);;
+  
+  background-color: #000000;
+}
+.counter-text 
+{
+  font-size:22px;
+  font-weight: 700 ;
+  color: black;
+}
+.counter-text h6 
+{
+ font-weight: 900;
+ /* font-size: 30px; */
+}
+
+/* counter section end */
+/* jods section start */
+.j-img
+{
+  width: 120px;
+  height: 120px;
+  
+}
+.j-img img
+{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 50%;
+}
+/* jods section end */
+/* blog section start */
+.b-img
+{
+  background-image: url('./image/backgruond.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.b-button button
+{
+  border-radius: 100px;
+  padding: 0 45px;
+  display: inline-block;
+  background-color: #000000;
+  height: 60px;
+  font-size: 18px;
+}
+/* blog section end */
+/* footer section start */
+footer p
+{
+  margin: 0;
+  padding: 0;
+}
+/* footer section end */
+footer{
+  color: white;
+  background-image: url('./image/asset\ 43.jpeg');
+  height: auto;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 50px 0;
+}
+.teroImg img{
+  max-width: 200px;
+}
+.columnList li{
+  list-style-type:disc;
+  padding: 5px 0;
+  text-align: left;
+}
+.columnList a{
+  text-decoration:  none;
+  color: white;
+  text-align:  left;
+}
+.columnss
+{
+  font-size: 14px;
+}
+.columnss button
+{
+  height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    background: #000000;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid;
+    padding: 0 50px;
+    position: relative;
+    font-size: 16px;
+    border-radius: 100px;
+}
+.foot-icon i
+{
+  border: 2px solid white;
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 10px;
+  padding: 8px 15px;
+}
+.copyright{
+  width: 100%;
+  display: block;
+  margin: 0;
+  font-size: 14px;
+}

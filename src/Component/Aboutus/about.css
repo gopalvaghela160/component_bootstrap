@@ -1,0 +1,62 @@
+.About-img p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.About-img h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.About-img {
+    background: url(./img/asset\ 43.jpeg) no-repeat center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-size: cover;
+}
+
+/* project slider section start */
+
+.PsliderDtl {
+    border: 5px solid #1d1d1d;
+    border-bottom-color: grey;
+    /* width: 200px; */
+}
+
+.DtlTxt {
+    z-index: 11;
+}
+
+.PsliderDtl::after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(29, 29, 29, .5);
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.PsliderDtl:hover.PsliderDtl::after {
+    background-color: rgb(29, 29, 29, .1);
+}
+
+.PsliderDtl:hover {
+    border-bottom-color: rgb(164, 164, 164);
+}
+
+.DtlBtn {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.PsliderDtl:hover .DtlBtn {
+    opacity: 1;
+}
+
+/* project slider section end */

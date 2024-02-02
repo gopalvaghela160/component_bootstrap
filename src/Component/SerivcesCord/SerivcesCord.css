@@ -1,0 +1,130 @@
+
+.tab-text p
+{
+  margin-bottom: 5px !important;
+}
+.tex-space
+{
+  margin-top: 2rem;
+}
+
+.when-img
+{
+  /* background-image: url('./image/asset 41.jpeg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+.when-main h2
+{
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 20px;
+  color: black;
+}
+.when-text{
+  text-align: center;
+  color: black;
+}
+.when-text h3 
+{
+  font-size: 1.3rem;
+  font-weight: 700;
+  /* text-align: center; */
+}
+
+.when-icon i
+{
+  font-size: 70px;
+  line-height: 90px;
+  color: black;
+}
+.when-icon
+{
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.card {
+  background-color: transparent !important;
+  padding: 20px 10px;
+  
+  margin: auto;
+}
+/* clients section start */
+.company
+{
+  /* background-image: url(./image/company.png); */
+  width: 100%;
+  height: auto;
+  padding: 60px 0px;
+  background-color: aqua;
+}
+.c-box img
+{
+  width: 100%;
+  height: 100%;
+
+}
+.c-box
+{
+  width: 157px;
+  height: 120px;
+  /* border: 2px solid black; */
+  margin-left: 40px;
+}
+
+.client-tital p
+{
+  color: black;
+}
+.client-tital h2
+{
+  font-size: 34px;
+  color: black;
+}
+
+/* clients section end */
+
+
+.PsliderDtl {
+  border: 5px solid #1d1d1d;
+  border-bottom-color: grey;
+  width: 70% !important;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.DtlTxt {
+  z-index: 11;
+} 
+  
+.PsliderDtl::after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 10 0%;
+  background-color: rgb(29, 29, 29, .5);
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.PsliderDtl:hover.PsliderDtl::after {
+  background-color: rgb(29, 29, 29, .1);
+}
+.PsliderDtl:hover{
+  border-bottom-color: rgb(164, 164, 164);
+}
+
+.DtlBtn {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.PsliderDtl:hover .DtlBtn {
+  opacity: 1;
+}
